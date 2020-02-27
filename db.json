@@ -1,14 +1,182 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#333">
+<title>1UpCoin</title>
+<meta name="description" content="1Up Coin">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="assets/css/preload.min.css">
+<link rel="stylesheet" href="assets/css/plugins.min.css">
+<link rel="stylesheet" href="assets/css/style.green-500.min.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/css/cryptocoins.css">
+<link rel="stylesheet" href="/assets/css/nano.css?v=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.css" />
+<!--[if lt IE 9
+]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+      <![endif
+]-->
+</head>
+<body>
+<div id="ms-preload" class="ms-preload">
+<div id="status">
+<div class="spinner">
+<div class="dot1"></div>
+<div class="dot2"></div>
+</div>
+</div>
+</div>
+<div class="ms-site-container">
+<nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-dark navbar-mode">
+<div class="container container-full">
+<div class="navbar-header">
+<a class="navbar-brand" href="/">
+
+<span class="ms-logo ms-logo-sm">1up</span>
+
+<strong>Coin</strong>
+</span>
+</a>
+</div>
+<div class="collapse navbar-collapse" id="ms-navbar">
+<ul class="navbar-nav">
+<li class="nav-item dropdown">
+<a href="/faq" class="nav-link dropdown-toggle notanimated fadeIn animation-delay-9">FAQ</a>
+</li>
+<li class="nav-item dropdown">
+<a href="/" class="nav-link dropdown-toggle notanimated fadeIn animation-delay-9">Login
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h2 id="link-header" class="text-center color-primary mb-2 wow fadeInDown animation-delay-4"></h2>
+<p id="step-header" class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">
+<span class="color-primary"></span></p>
+<div class="container mt-4">
+<div id="testing" class="row">
+<div class="ms-feature col-xl-12 col-lg-18 col-md-18 card wow animation-delay-4">
+<div class="text-center card-block">
+<div class="tab-content">
+<div style="text-align: center;">
+<center>
+<div class="checkbox">
+<label>
+<input id="offline" value="offline" onclick="if (!window.__cfRLUnblockHandlers) return false; handleClick(this);" type="checkbox" data-cf-modified-a40cb19773622fa886ea0d27-=""><span class="checkbox-material"></span> Show Only Online
+</label>
+
+<label>
+ </label>
+<label>
+<input id="bitcoin" value="bitcoin" onclick="if (!window.__cfRLUnblockHandlers) return false; handleClick(this);" type="checkbox" coin data-cf-modified-a40cb19773622fa886ea0d27-=""><span class="checkbox-material"></span> Hide Only Coinbase
+</label>
+</div>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mt-4">
+<h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4"></h2>
+<div class="row">
+</div>
+</div>
+<aside class="ms-footbar">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 ms-footer-col">
+<div class="ms-footbar-block">
+
+</div>
+</div>
+
+<div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
+<div class="ms-footbar-block">
+<div class="ms-footbar-title">
+<h3 class="no-m ms-site-title">Created by: <strong>jaku</strong></h3>
+</div>
+<address class="no-mb">
+<p>
+<i class="fa fa-twitter" aria-hidden="true"></i></i> <a href="https://twitter.com/jaku">https: //twitter.com/jaku</a></p>
+<p>
+<i class="fa fa-twitch" aria-hidden="true"></i></i> <a href="https://twitch.tv/jaku">http: //twitch.tv/jaku</a></p>
+<p>
+<i class="color-info-light zmdi zmdi-email mr-1"></i>
+<a href="/cdn-cgi/l/email-protection#95fff4fee0d5e2f4e7e5bbe2fae7f9f1"><span class="__cf_email__" data-cfemail="2b414a405e6b5c4a595b055c4459474f">[email&#160;protected
+]</span></a>
+</p>
+<p>
+<i class="fa fa-money" aria-hidden="true"></i></i> <a href="https://1upcoin.com/donate/jaku">Support 1upCoin</a></p>
+<p>
+</address>
+</div>
+</div>
+
+</div>
+</div>
+</aside>
+<footer class="ms-footer">
+<div class="container">
+<p>Copyright &copy; Warp World, LLC. 2018 - <a href="/privacy">Privacy Policy</a> - <a href="/terms">Terms of Service</a></p>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-1.10.2.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+<script src="assets/js/plugins.min.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+<script src="assets/js/app.min.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+<script src="assets/js/index.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+<script src="assets/js/sorttable.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+ <script src="https://unpkg.com/sweetalert2@7.0.9/dist/sweetalert2.all.js" type="a40cb19773622fa886ea0d27-text/javascript"></script>
+<script type="a40cb19773622fa886ea0d27-text/javascript">
+function userStatus(t,a){}function UsersCheck(){$.getJSON("https://1upcoin.com/optinusers2",function(t){var a;if($("#userTable").find("tr:not(:first)").remove(),t.length>=1)for(var e=0;e<t.length;e++){var n="";t[e
+                  ].accepted.bitcoin&&(n+=" bitcoin litecoin ethereum"),t[e
+                  ].accepted.nano&&(n+=" nano"),
+                  "live"==t[e
+                  ].twitch.status?n+=" online":n+=" offline";var c=`\n                <div class="ms-feature col-xl-4 col-lg-6 col-md-6 card ${n}">\n                <div class="" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url('${t[e].twitch.banner}') center center / cover no-repeat">\n                <a href="https://twitch.tv/${t[e].name}"><img src="${t[e].twitch.profile}" alt="${t[e].name}" class="img-avatar-circle"></a><span style="float:left;" class="badge-pill pill-primary badge-pill-square">${t[e
+                        ].twitch.followers
+                  }</span>`;"live"==t[e
+                  ].twitch.status?c+=`<span style="float:right;" class="badge-pill badge-pill-success badge-pill-square">Online (${t[e
+                        ].twitch.viewer_count
+                  })</span>`:c+='<span style="float:right;" class="badge-pill badge-pill-danger badge-pill-square">Offline</span>',c+=`\n                </div><h3 class="color-primary text-center"><a href="https://twitch.tv/${t[e].name}">${t[e
+                        ].name
+                  }</a></h3>\n                <div class="card-body text-center">`,
+                  "live"==t[e
+                  ].twitch.status&&(c+=`<p>\n                    Game: ${t[e
+                        ].twitch.game
+                  }\n                    </p>`),
+                  "live"!=t[e
+                  ].twitch.status&&t[e
+                  ].twitch.game?c+=`<p>Last Played: ${t[e
+                        ].twitch.game
+                  }</p>`: "live"!=t[e
+                  ].twitch.status&&(c+="<p><br></p>"),c+="<br>",t[e
+                  ].accepted.bitcoin&&(c+=`<a href="https://1upcoin.com/donate/${t[e].name}" class="ms-icon ms-icon-circle ms-icon-lg color-bitcoin">\n                    <i class="fa fa-bitcoin"></i>\n                    </a>\n                    <a href="https://1upcoin.com/donate/${t[e].name}" class="ms-icon ms-icon-circle ms-icon-lg color-litecoin">\n                    <i class="cc LTC-alt"></i>\n                    </a>\n                    <a href="https://1upcoin.com/donate/${t[e].name}" class="ms-icon ms-icon-circle ms-icon-lg color-ethereum">\n                    <i class="cc ETH-alt"></i>\n                    </a>`),t[e
+                  ].accepted.nano&&(c+=`<a href="https://1upcoin.com/donate/${t[e].name}" class="ms-icon ms-icon-circle ms-icon-lg color-nanocurrency">\n                    <img width="50" src="/assets/img/nano-white.png">\n                    </a>`),c+="  \n                </div>\n                </div>",$("#testing").append(c),a=$("<tr/>"),
+                  "twitch"==t[e
+                  ].service&&a.append('<td class="0"><span id="status_'+e+'"></span><a href="https://twitch.tv/'+t[e].name+'">'+t[e
+                  ].name+"</a></td>"),t[e
+                  ].coinbase?a.append('<td><i align="left" class="fa fa-check" aria-hidden="true"></i></td>'):a.append("<td></td>"),t[e
+                  ].nanex?a.append('<td><i align="left" class="fa fa-check" aria-hidden="true"></i></td>'):a.append("<td></td>")
+            }
+      })
+}handleClick=function(t){$("input:checked[coin]").each(function(t,a){var e=$(a).val();$(`.${e
+            }`).hide()
+      }),$("input:not(:checked)[coin]").each(function(t,a){var e=$(a).val();$(`.${e
+            }`).show()
+      }),$("input:checked:not([coin])").each(function(t,a){var e=$(a).val();$(`.${e
+            }`).hide()
+      })
+},UsersCheck();
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="a40cb19773622fa886ea0d27-|49" defer=""></script></body>
+</html>
